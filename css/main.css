@@ -1,0 +1,210 @@
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+.nav-bar{
+    width: 100%;
+    height: 5%;
+}
+#logo-img{
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+#logo-img img{
+    padding-left: 14%;
+    padding-top: 2%;
+    width: 40%;
+    height: 80%;
+}
+.navigation{
+    float: left;
+    width: 80%;
+    text-align: right;
+    height: 100%;
+}
+.navigation ul{
+    list-style-type: none;
+    margin-right: 10%;
+    margin-top: 1%;
+}
+.navigation li{
+    display: inline;
+    padding-right: 5%;
+}
+.navigation a{
+    text-decoration: none;
+    color: black;
+}
+.navigation a:hover{
+    background-color: aqua;
+    padding:1%;
+}
+
+#banner{
+    width: 100%;
+    height: 45%;
+}
+#banner-image{
+    width:40%;
+    height: 100%;
+    float: left;
+    background-color: white;
+}
+#banner-image img{
+    width: 70%;
+    height: 60%;
+    margin-top: 8%;
+    margin-left: 14%;
+    float: left;
+}
+#banner-content{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    float: left;
+}
+#banner-content h1 {
+    text-align: center;
+    font-family: serif;
+}
+#banner-content p{
+    font-family: serif;
+}
+#home-content{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.active{
+    color: orangered !important;
+    font-weight: bold;
+}
+.services{
+    width: 30%;
+    height: 40%;
+    float: left;
+}
+#middle-div{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.services h1{
+    padding-top:3%;
+}
+.services h1{
+    padding-right:5%;
+    padding-left:5%;
+    text-align: justify;
+}
+.services p{
+    padding-right:5%;
+    padding-left:5%;
+    text-align: justify;
+}
+.services-page{
+    width: 100%;
+    height: 40%;
+}
+.img-services-page{
+    float: left;  
+    width: 30%;
+}
+.img-services-page img{
+    margin-left: 25%;
+    margin-top: 20%;
+}
+.content-services-page{
+    float: left;
+    width: 70%;
+}
+.content-services-page a{
+    text-decoration: none;
+    padding: 2%;
+    background-color: darkturquoise;
+    border-radius: 10px;
+    color: white;
+}
+.content-services-page p{
+    margin-bottom: 5%;
+    padding-right: 10%;
+}
+.locations{
+    width: 40%;
+    float: left;
+}
+.locations h2{
+    padding-left: 10%;
+}
+.locations h3{
+    padding-left: 10%;
+}
+.locations address{
+    padding-left: 10%;
+}
+.contact-form{
+    width: 50%;
+    float: left;
+	padding-left: 10%;
+}
+.contact-form label{
+    width: 140px;
+    display: inline-block;
+    text-align: right;
+    padding:1%;
+}
+.contact-form input{
+    width: 40%;
+}
+.contact-form textarea{
+    width: 40%;
+}
+.contact-form h3{
+    padding-left: 10%;
+}
+.contact-form button{
+    margin-left: 161px;
+    width: 17%;
+    height: 4%;
+}
+.table-location{
+	width: 100%;
+}
+.table-location td{
+	text-align: center;
+	border: 1px solid black;
+}
+#banner-opaq-img{
+	opacity: 0.2;
+}
+#banner-opaq-img:hover{
+	opacity:1;
+}
+#banner-image{
+	background-image: url('../images/banner-img.png');
+	background-repeat: no-repeat;
+    background-position: center center; 
+	background-size: 50% 50%;
+	opacity: 0.2;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+#banner-image:hover{
+	opacity: 1;
+    width: 300px;
+    height: 300px;
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(360deg);
+}
+
+.footer{
+    height: 60px
+}
+.img-thumbs img{
+    width:40px;
+    height: 40px;
+}
+
+.img-full{
+        width: 100%;
+    height: 300px;
+}

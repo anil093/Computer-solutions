@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>The Computer Store</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="nav-bar">
+                <div id= 'logo-img'>
+                    <a href='index.html'><img alt="logo" src="images/logo.png"></a>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li><a  href = 'index.html'>Home</a></li>
+                        <li><a   href = 'services.html'>Services</a></li>
+                        <li><a class='active' href = 'contactus.html'>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <div class="locations">
+                <h2>Locations:</h2>
+				<table class='table-location'>
+					<thead>
+						<th>City</th>
+						<th>Address</th>
+						<th>Contact Number</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Markham</td>
+							<td>104 Helisia st., Unit 122A 
+                    			<br /> B7J8K9, ON
+							</td>
+							<td>416-000-0001</td>
+						</tr>
+						<tr>
+							<td>Brampton</td>
+							<td>551 Steeles st., Unit 122A 
+                    			<br /> A2H3K9, ON
+							</td>
+							<td>416-910-0001</td>
+						</tr>
+						<tr>
+							<td>Richmond Hill</td>
+							<td>564 Queen St., Unit 122A 
+                    			<br /> T6H7Y8, ON
+							</td>
+							<td>905-040-3401</td>
+						</tr>
+						<tr>
+							<td>North York</td>
+							<td>345 Terrace St., Unit 122A 
+                    			<br /> T6H4G4, ON
+							</td>
+							<td>647-999-9999</td>
+						</tr>
+					</tbody>
+				</table>
+            </div>
+            <div class="contact-form">
+                <h3> Please submit your query here.</h3>
+                <form id ='contact-us' method="get" action ="contactus.html" >
+                    <label for='name'>Name:</label>
+                    <input name ="fname" type="text" autofocus required placeholder="enter full name"><br />
+                    <label for='email'>Email:</label>
+                    <input name="email" type="text"  required placeholder="enter email address"><br />
+                    <label for='tel'>Telephone:</label>
+                    <input name="tel" type="tel"  required placeholder="enter phone number"><br />
+                    <label for='description'>Issue Description:</label>
+                    <textarea name="description" rows="4" cols="50"></textarea><br />
+                    <button type="submit" >Submit</button>
+                </form>
+            </div>
+             <div class="row">
+            <div class="img-thumbs" style="float:left">
+                <p> Product catalouge:</p>
+                <img id = 'thumb_img_1' src="images/example-slide-1.jpg">
+                <img id = 'thumb_img_2' src="images/example-slide-2.jpg">
+                <img id = 'thumb_img_3' src="images/example-slide-3.jpg">
+                <img id = 'thumb_img_4' src="images/example-slide-4.jpg"><br>
+                <img id = 'thumb_img_5' src="images/pic1.jpg">
+                <img id = 'thumb_img_6' src="images/pic2.jpg">
+                <img id = 'thumb_img_7' src="images/pic3.jpg">
+                <img id = 'thumb_img_8' src="images/banner-img.png">
+            </div>
+            <div class="img-full" style="float: left;padding: 20px;width: 400px;height: 300px;margin-left: 30%;">
+                <img id = 'full_img_1' class="img-full"  src="images/example-slide-1.jpg">
+                <img id = 'full_img_2' class="img-full" style="display:none" src="images/example-slide-2.jpg">
+                <img id = 'full_img_3' class="img-full" style="display:none" src="images/example-slide-3.jpg">
+                <img id = 'full_img_4' class="img-full" style="display:none" src="images/example-slide-4.jpg">
+                <img id = 'full_img_5' class="img-full" style="display:none" src="images/pic1.jpg">
+                <img id = 'full_img_6' class="img-full" style="display:none" src="images/pic2.jpg">
+                <img id = 'full_img_7' class="img-full" style="display:none" src="images/pic3.jpg">
+                <img id = 'full_img_8' class="img-full" style="display:none" src="images/banner-img.png">
+            </div>
+        </div>
+            <div style="clear:both"></div>
+		<div class="footer">
+			<p style="text-align:center">current date</p>
+		</div>
+        </div>
+       
+		<script src="js/jquery3.1.js"></script>
+        <script>
+			$(document).ready(function(){
+				var d = new Date();
+				$($('.footer').find('p')[0]).html(d);
+                $("#contact-us").submit(function(e) {
+                });
+                
+                $('[id^=thumb_img_]').click(function(){
+                   thumbId = this.id;
+                    imgId = thumbId.split('_');
+                    imgId = imgId[2];
+                    $('[id^=full_img_]').hide();
+                    $('#full_img_' + imgId).fadeIn('slow');
+                });
+			});
+        </script>
+    </body>
+</html>
